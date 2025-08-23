@@ -1,4 +1,4 @@
-while true:
+while True:
     try:
        mark_input = input("Enter a mark: ")
 
@@ -21,3 +21,9 @@ while true:
             print("You got failed")
         break 
         # only break when valid input is provided
+
+    #except ValueError:
+         #print("Invalid input. Please enter an interger value(e.g., 85).")
+
+    except Exception as e:
+        print("There is some error in input format:", e)
